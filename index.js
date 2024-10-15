@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import todoRouter from "./routes/todo.js";
 import userRouter from "./routes/user.js";
 
-//connect to database
+//connect to database 
 await mongoose.connect(process.env.MONGO_URI);
 
 //create an express app
