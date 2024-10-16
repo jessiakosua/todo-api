@@ -28,7 +28,7 @@ export const getTodos = async (req, res, next) => {
     const { filter = "{}" , limit =10, skip =o } = req.query;  
     //fecth todos from database
     const todos = await TodoMode1.
-    find(JSON.parse(filter))
+     find(JSON.parse(filter))
     .limit(limit)
     .skip(skip);
     // return response
