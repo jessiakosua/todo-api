@@ -8,7 +8,6 @@ const todoRouter = Router();
 //define routes
 todoRouter.post('/todos' , todoIconUpload.single('icon'), addTodo);
 
-
 todoRouter.post('/todos' , addTodo);
 
 todoRouter .get('/todos', getTodos);
